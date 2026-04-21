@@ -79,13 +79,79 @@ The main features of LPC2148 include the following.
 
 
 ## STM 32 CUBE PROGRAM :
+### Arithmetic Problems:
+```
+org 100h
 
 
+MOV AX,0111H
+MOV BX,0101H
+ADD AX,BX
+MOV [2000H], AX     
 
+
+MOV AX,0000H
+MOV BX,0010H
+SUB AX,BX
+MOV [2002H], AX     
+
+
+MOV AX,0011H
+MOV BX,0100H
+MUL BX
+MOV [2004H], AX     
+
+
+MOV AX,0101H
+MOV BX,0110H
+DIV BX
+MOV [2006H], AX     
+
+
+ret
+```
+
+### Logical problems:
+```
+org 100h
+
+MOV AX, 0F0FH
+MOV BX, 00FFH
+AND AX, BX
+MOV [2000H], AX
+
+MOV AX, 0F0FH
+MOV BX, 00FFH
+OR AX, BX
+MOV [2002H], AX
+
+MOV AX, 0F0FH
+MOV BX, 00FFH
+XOR AX, BX
+MOV [2004H], AX
+
+MOV AX, 0F0FH
+NOT AX
+MOV [2006H], AX
+
+MOV AX,1234H
+OR AX,00FFH
+NOT AX
+MOV [2008H],AX
+
+MOV AX,1234H
+XOR AX,00FFH
+NOT AX
+MOV [2010H],AX
+
+ret
+```
 ## Output  :
  
- 
- 
+ <img width="1920" height="1080" alt="arthimetic" src="https://github.com/user-attachments/assets/46565572-3d53-4c03-9f8c-ac434dce0919" />
+
+ <img width="1920" height="1080" alt="logic" src="https://github.com/user-attachments/assets/84ec2574-4d23-40b6-ac47-3f91323e86c8" />
+
  
 ## Result :
 Interfacing a digital output with ARM microcontroller is executed and the results are verified.
