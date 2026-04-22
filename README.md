@@ -190,7 +190,7 @@ MOV [2008H],AX
 ret
 ```
 ## Output  :
-<img width="1920" height="1080" alt="NOT" src="https://github.com/user-attachments/assets/ada1540b-331f-4732-ac6d-4b4303a57826" />
+<<img width="1920" height="1080" alt="NOR" src="https://github.com/user-attachments/assets/487c8355-bf28-43eb-bc2d-a1c2a60a755e" />
 
 
 ```
