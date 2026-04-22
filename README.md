@@ -90,6 +90,7 @@ ADD AX,BX
 MOV [2000H], AX
 ret
 ```
+## Output  :
 <img width="1920" height="1080" alt="ADD" src="https://github.com/user-attachments/assets/d968702c-0d39-41b2-982a-46381076e4a6" />
 
 
@@ -102,6 +103,7 @@ SUB AX,BX
 MOV [2002H], AX     
 ret
 ```
+## Output  :
 <img width="1920" height="1080" alt="SUB" src="https://github.com/user-attachments/assets/5bd2683f-0034-4a23-8b2f-620b78fbd636" />
 
 ### 3.MULTIPLICATION
@@ -113,6 +115,7 @@ MUL BX
 MOV [2004H], AX
 ret
 ```
+## Output  :
 <img width="1920" height="1080" alt="MUL" src="https://github.com/user-attachments/assets/57702294-2f17-4b5b-9848-6eddfc20c2b3" />
 
 ### 4.DIVISION
@@ -124,63 +127,63 @@ DIV BX
 MOV [2006H], AX     
 ret
 ```
+## Output  :
 <img width="1920" height="1080" alt="DIV" src="https://github.com/user-attachments/assets/15de2437-d074-408a-bf7a-ad96d703bb00" />
 
 
 ### Logical problems:
 ```
 org 100h
-
 MOV AX, 0F0FH
 MOV BX, 00FFH
 AND AX, BX
 MOV [2000H], AX
-
 ret
 ```
 
 org 100h
-
 MOV AX, 0F0FH
 MOV BX, 00FFH
 OR AX, BX
 MOV [2002H], AX
-
 ret
 ```
 
 ```
 org 100h
-
 MOV AX, 0F0FH
 MOV BX, 00FFH
 XOR AX, BX
 MOV [2004H], AX
-
 ret
 ```
-
+```
+org 100h
 MOV AX, 0F0FH
 NOT AX
 MOV [2006H], AX
+ret
+```
 
+```
+org 100h 
 MOV AX,1234H
 OR AX,00FFH
 NOT AX
 MOV [2008H],AX
+ret
+```
 
+```
+org 100h
 MOV AX,1234H
 XOR AX,00FFH
 NOT AX
 MOV [2010H],AX
-
 ret
 ```
-## Output  :
- 
- <img width="1920" height="1080" alt="arthimetic" src="https://github.com/user-attachments/assets/46565572-3d53-4c03-9f8c-ac434dce0919" />
 
- <img width="1920" height="1080" alt="logic" src="https://github.com/user-attachments/assets/84ec2574-4d23-40b6-ac47-3f91323e86c8" />
+ 
 
  
 ## Result :
