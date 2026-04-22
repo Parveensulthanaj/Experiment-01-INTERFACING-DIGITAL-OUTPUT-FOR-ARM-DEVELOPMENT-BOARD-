@@ -79,7 +79,7 @@ The main features of LPC2148 include the following.
 
 
 ## STM 32 CUBE PROGRAM :
-### Arithmetic Problems:
+### Arithmetic Problems with 16 bit:
 
 ### 1.ADDITION:
 ```
@@ -131,7 +131,7 @@ ret
 <img width="1920" height="1080" alt="DIV" src="https://github.com/user-attachments/assets/15de2437-d074-408a-bf7a-ad96d703bb00" />
 
 
-### Logical problems:
+### Logical problems with 16 bit:
 ```
 org 100h
 MOV AX, 0F0FH
@@ -140,7 +140,11 @@ AND AX, BX
 MOV [2000H], AX
 ret
 ```
+## Output  :
+<img width="1920" height="1080" alt="AND" src="https://github.com/user-attachments/assets/d6afc800-f82b-4b6e-966d-9cd9f0ce9889" />
 
+
+```
 org 100h
 MOV AX, 0F0FH
 MOV BX, 00FFH
@@ -148,6 +152,10 @@ OR AX, BX
 MOV [2002H], AX
 ret
 ```
+## Output  :
+<img width="1920" height="1080" alt="OR" src="https://github.com/user-attachments/assets/5e76daa4-e242-4012-85ae-50f293b1b20d" />
+
+
 
 ```
 org 100h
@@ -157,6 +165,10 @@ XOR AX, BX
 MOV [2004H], AX
 ret
 ```
+## Output  :
+<img width="1920" height="1080" alt="XOR" src="https://github.com/user-attachments/assets/5d99c568-690c-46f9-8aec-5b0b0ce9ba96" />
+
+
 ```
 org 100h
 MOV AX, 0F0FH
@@ -164,6 +176,10 @@ NOT AX
 MOV [2006H], AX
 ret
 ```
+## Output  :
+<img width="1920" height="1080" alt="NOT" src="https://github.com/user-attachments/assets/1fa4629f-4112-49c0-8751-82093c6f851a" />
+
+
 
 ```
 org 100h 
@@ -173,6 +189,9 @@ NOT AX
 MOV [2008H],AX
 ret
 ```
+## Output  :
+<img width="1920" height="1080" alt="NOT" src="https://github.com/user-attachments/assets/ada1540b-331f-4732-ac6d-4b4303a57826" />
+
 
 ```
 org 100h
@@ -182,6 +201,8 @@ NOT AX
 MOV [2010H],AX
 ret
 ```
+## Output  :
+<img width="1920" height="1080" alt="XNOR" src="https://github.com/user-attachments/assets/f46594d7-a01a-45d5-a82d-59f678da3747" />
 
  
 
