@@ -132,6 +132,8 @@ ret
 
 
 ### Logical problems with 16 bit:
+
+### 1.AND:
 ```
 org 100h
 MOV AX, 0F0FH
@@ -143,7 +145,7 @@ ret
 ## Output  :
 <img width="1920" height="1080" alt="AND" src="https://github.com/user-attachments/assets/d6afc800-f82b-4b6e-966d-9cd9f0ce9889" />
 
-
+### 2.OR:
 ```
 org 100h
 MOV AX, 0F0FH
@@ -156,7 +158,7 @@ ret
 <img width="1920" height="1080" alt="OR" src="https://github.com/user-attachments/assets/5e76daa4-e242-4012-85ae-50f293b1b20d" />
 
 
-
+### 3.XOR:
 ```
 org 100h
 MOV AX, 0F0FH
@@ -168,7 +170,7 @@ ret
 ## Output  :
 <img width="1920" height="1080" alt="XOR" src="https://github.com/user-attachments/assets/5d99c568-690c-46f9-8aec-5b0b0ce9ba96" />
 
-
+### 4.NOT:
 ```
 org 100h
 MOV AX, 0F0FH
@@ -180,7 +182,7 @@ ret
 <img width="1920" height="1080" alt="NOT" src="https://github.com/user-attachments/assets/1fa4629f-4112-49c0-8751-82093c6f851a" />
 
 
-
+### 5.NOR:
 ```
 org 100h 
 MOV AX,1234H
@@ -192,7 +194,7 @@ ret
 ## Output  :
 <<img width="1920" height="1080" alt="NOR" src="https://github.com/user-attachments/assets/487c8355-bf28-43eb-bc2d-a1c2a60a755e" />
 
-
+### 6.XNOR:
 ```
 org 100h
 MOV AX,1234H
